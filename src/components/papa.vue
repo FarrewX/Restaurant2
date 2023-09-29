@@ -1,20 +1,33 @@
+<script setup>
+import buttonf from './buttonf.vue';
+
+</script>
+
 <template>
     <h1>Papa Curry</h1><br>
         <header>
             <p>อาหารอร่อย บริการดี ถูกสุขลักษณะอนามัย</p><br>
-        </header>
-        <main>
+             <div id="imgList">
+                 <img class="images" src="\src\assets\image\inpapa\papa111.png" alt="1">&ensp;
+                 <img class="images" src="\src\assets\image\inpapa\papa222.png" alt="2">&ensp;
+                 <img class="images" src="\src\assets\image\inpapa\papa333.png" alt="3">
+             </div>
+         </header>
+         <main>
             <section id="store-info">
-                <h2>ข้อมูลร้านค้า</h2>
-                <p>ที่อยู่: 123 ถนนร้านค้า เมือง</p>
-                <p>โทรศัพท์: 012-345-6789</p>
+                <br><br><br><h2>ข้อมูลร้าน</h2>
+                <p>14 ถนน สิโรรส 5 ตำบลสุเทพ อำเภอเมืองเชียงใหม่ เชียงใหม่ 50200</p>
+                <p>โทรศัพท์: 082-6204440</p> <br>
             </section>
-            <section id="map">
-                <h2>แผนที่ร้านค้า</h2>
-                <!-- สร้าง div เพื่อแสดงแผนที่ โดยใช้ข้อมูลตำแหน่งละติจูด (latitude) และลองจิจูด (longitude) -->
-                <div id="map-container">
-                    <!-- ใส่แผนที่ที่นี่ -->
-                </div>
-            </section>
+            <div>
+                <buttonf /> <br>
+            </div>
         </main>
-</template>
+ </template>
+ 
+ <style>
+.images{
+    height: 200px;
+    width: auto;
+}
+ </style>
